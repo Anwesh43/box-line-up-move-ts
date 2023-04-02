@@ -5,6 +5,7 @@ import { BLUMProps } from "./typing";
 
 
 const BoxLineUpMove = (props : BLUMProps) => {
+    console.log("BLUMW, BLUMH", props.w, props.h)
     const {parentStyle, barStyle, lineStyle} = useStyle(props.w, props.h, props.scale)
     return (
         <div style = {parentStyle()} onClick = {() => props.onClick()}>

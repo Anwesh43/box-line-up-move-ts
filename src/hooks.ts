@@ -50,6 +50,7 @@ export const useStyle = (w : number, h : number, scale : number) => {
     const size : number = Math.min(w, h) / 8
     const sf : number = sinify(scale)
     const background = 'purple'
+    console.log("W, H", w, h)
     return {
         parentStyle() : CSSProperties {
             const left = `${w / 2}px`
@@ -70,6 +71,7 @@ export const useStyle = (w : number, h : number, scale : number) => {
                 top, 
                 left, 
                 width,
+                height,
                 background
             }
         },
